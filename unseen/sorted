@@ -1,0 +1,176 @@
+agram.o: a_globals.h agram.y automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h ptable.h srpc.h stack.h timestamp.h topic.h tshtable.h
+allowances.o: allowances.c config.h endpoint.h flowmonitor.h flowrec.h logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+autoCompile.o: autoCompile.c automaton.h code.h dataStackEntry.h endpoint.h event.h linkedlist.h machineContext.h ptable.h srpc.h stack.h timestamp.h topic.h tshtable.h
+automaton.o: a_globals.h automaton.c automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h srpc.h stack.h timestamp.h topic.h tshtable.h
+code.o: a_globals.h automaton.h code.c code.h config.h dataStackEntry.h dsemem.h endpoint.h event.h hwdb.h linkedlist.h list.h machineContext.h mem.h node.h ptable.h pubsub.h rtab.h sqlstmts.h srpc.h stack.h table.h timestamp.h topic.h tshtable.h typetable.h
+collapws.o: collapws.c
+crecord.o: crecord.c crecord.h ctable.h endpoint.h mem.h stable.h tslist.h
+ctable.o: crecord.h ctable.c ctable.h endpoint.h stable.h tslist.h
+dhcplogger.o: config.h dhcplogger.c endpoint.h rtab.h srpc.h
+dhcpmonitor.o: config.h dhcpmonitor.c dhcprec.h endpoint.h i8_parser.h logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+dhcprec.o: config.h dhcprec.c dhcprec.h endpoint.h i8_parser.h rtab.h srpc.h timestamp.h
+dir.o: dir.c
+dsemem.o: dataStackEntry.h dsemem.c dsemem.h linkedlist.h mem.h tshtable.h
+echoserver.o: echoserver.c endpoint.h srpc.h
+endpoint.o: endpoint.c endpoint.h mem.h
+event.o: automaton.h code.h dataStackEntry.h endpoint.h event.c event.h linkedlist.h machineContext.h mem.h srpc.h stack.h timestamp.h topic.h tshtable.h
+filecrawler.o: config.h endpoint.h filecrawler.c filecrawler.h hashtable.h list.h logdefs.h map.h mem.h rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h y.tab.h
+flow_accumulator.o: flow_accumulator.c flow_accumulator.h
+flowlogger.o: config.h endpoint.h flow_accumulator.h flowlogger.c srpc.h
+flowmonitor.o: config.h endpoint.h flowmonitor.c flowmonitor.h flowrec.h hostmap.h logdefs.h mem.h portmap.h protomap.h rtab.h srpc.h timestamp.h util.h
+flowslast.o: config.h endpoint.h flowslast.c logdefs.h mem.h rtab.h srpc.h util.h
+flowtransl8.o: flowrec.h flowtransl8.c hostmap.h portmap.h protomap.h timestamp.h
+gen_flows.o: gen_flows.c
+genindex.o: config.h endpoint.h genindex.c rtab.h srpc.h timestamp.h
+gram.o: config.h gram.y list.h logdefs.h mem.h sqlstmts.h timestamp.h typetable.h util.h
+hashtable.o: hashtable.c hashtable.h
+hostmap.o: hostmap.c hostmap.h tslist.h
+http_accumulator.o: http_accumulator.c http_accumulator.h
+httplogger.o: config.h endpoint.h http_accumulator.h httplogger.c srpc.h
+httpmonitor.o: config.h endpoint.h httpmonitor.c logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+hwdb.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hashtable.h hwdb.c hwdb.h indextable.h linkedlist.h list.h logdefs.h mb.h mem.h node.h parser.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tslist.h tuple.h typetable.h util.h y.tab.h
+hwdbclient.o: config.h endpoint.h hwdbclient.c logdefs.h mem.h rtab.h srpc.h util.h
+hwdbserver.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h hwdbserver.c linkedlist.h list.h logdefs.h mb.h mem.h node.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tshtable.h tuple.h typetable.h util.h
+i8_parser.o: i8_parser.c i8_parser.h
+indextable.o: automaton.h config.h dataStackEntry.h endpoint.h event.h filecrawler.h hashtable.h indextable.c indextable.h linkedlist.h list.h logdefs.h map.h mem.h node.h nodecrawler.h ptable.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tuple.h typetable.h util.h
+inthash.o: inthash.c
+kflowlogger.o: config.h endpoint.h kernel/debug.h kernel/khwdb.h kflowlogger.c srpc.h timestamp.h
+kflowmonitor.o: config.h endpoint.h flowrec.h kflowmonitor.c kflowmonitor.h logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+kflowpersist.o: config.h endpoint.h kflowpersist.c logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+khttplogger.o: config.h endpoint.h kernel/debug.h kernel/khwdb.h khttplogger.c mem.h srpc.h timestamp.h
+link_accumulator.o: link_accumulator.c link_accumulator.h
+linkedlist.o: linkedlist.c linkedlist.h mem.h
+linklogger.o: config.h endpoint.h i8_parser.h link_accumulator.h linklogger.c rt_parser.h srpc.h
+linkmonitor.o: config.h endpoint.h i8_parser.h linkmonitor.c linkmonitor.h linkrec.h logdefs.h mem.h rtab.h srpc.h timestamp.h util.h
+list.o: config.h list.c list.h logdefs.h mem.h util.h
+map.o: config.h dir.h endpoint.h filecrawler.h hashtable.h list.h logdefs.h map.c map.h mem.h rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h
+mb.o: config.h endpoint.h list.h mb.c mb.h mem.h node.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tuple.h typetable.h
+mem.o: mem.c mem.h
+nagram.o: a_globals.h automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h nagram.y ptable.h srpc.h stack.h timestamp.h topic.h tshtable.h
+nallowances.o: config.h endpoint.h flowmonitor.h flowrec.h logdefs.h mem.h nallowances.c rtab.h srpc.h timestamp.h util.h
+nautoCompile.o: automaton.h code.h dataStackEntry.h endpoint.h event.h linkedlist.h machineContext.h nautoCompile.c ptable.h srpc.h stack.h timestamp.h topic.h tshtable.h
+nautomaton.o: a_globals.h automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h nautomaton.c srpc.h stack.h timestamp.h topic.h tshtable.h
+ncode.o: a_globals.h automaton.h code.h config.h dataStackEntry.h dsemem.h endpoint.h event.h hwdb.h linkedlist.h list.h machineContext.h mem.h ncode.c node.h ptable.h pubsub.h rtab.h sqlstmts.h srpc.h stack.h table.h timestamp.h topic.h tshtable.h typetable.h
+ncollapws.o: ncollapws.c
+ncrecord.o: crecord.h ctable.h endpoint.h mem.h ncrecord.c stable.h tslist.h
+nctable.o: crecord.h ctable.h endpoint.h nctable.c stable.h tslist.h
+ndhcplogger.o: config.h endpoint.h ndhcplogger.c rtab.h srpc.h
+ndhcpmonitor.o: config.h dhcprec.h endpoint.h i8_parser.h logdefs.h mem.h ndhcpmonitor.c rtab.h srpc.h timestamp.h util.h
+ndhcprec.o: config.h dhcprec.h endpoint.h i8_parser.h ndhcprec.c rtab.h srpc.h timestamp.h
+ndir.o: ndir.c
+ndsemem.o: dataStackEntry.h dsemem.h linkedlist.h mem.h ndsemem.c tshtable.h
+nechoserver.o: endpoint.h nechoserver.c srpc.h
+nendpoint.o: endpoint.h mem.h nendpoint.c
+nevent.o: automaton.h code.h dataStackEntry.h endpoint.h event.h linkedlist.h machineContext.h mem.h nevent.c srpc.h stack.h timestamp.h topic.h tshtable.h
+nfilecrawler.o: config.h endpoint.h filecrawler.h hashtable.h list.h logdefs.h map.h mem.h nfilecrawler.c rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h y.tab.h
+nflow_accumulator.o: flow_accumulator.h nflow_accumulator.c
+nflowlogger.o: config.h endpoint.h flow_accumulator.h nflowlogger.c srpc.h
+nflowmonitor.o: config.h endpoint.h flowmonitor.h flowrec.h hostmap.h logdefs.h mem.h nflowmonitor.c portmap.h protomap.h rtab.h srpc.h timestamp.h util.h
+nflowslast.o: config.h endpoint.h logdefs.h mem.h nflowslast.c rtab.h srpc.h util.h
+nflowtransl8.o: flowrec.h hostmap.h nflowtransl8.c portmap.h protomap.h timestamp.h
+ngen_flows.o: ngen_flows.c
+ngenindex.o: config.h endpoint.h ngenindex.c rtab.h srpc.h timestamp.h
+ngram.o: config.h list.h logdefs.h mem.h ngram.y sqlstmts.h timestamp.h typetable.h util.h
+nhashtable.o: hashtable.h nhashtable.c
+nhostmap.o: hostmap.h nhostmap.c tslist.h
+nhttp_accumulator.o: http_accumulator.h nhttp_accumulator.c
+nhttplogger.o: config.h endpoint.h http_accumulator.h nhttplogger.c srpc.h
+nhttpmonitor.o: config.h endpoint.h logdefs.h mem.h nhttpmonitor.c rtab.h srpc.h timestamp.h util.h
+nhwdb.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hashtable.h hwdb.h indextable.h linkedlist.h list.h logdefs.h mb.h mem.h nhwdb.c node.h parser.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tslist.h tuple.h typetable.h util.h y.tab.h
+nhwdbclient.o: config.h endpoint.h logdefs.h mem.h nhwdbclient.c rtab.h srpc.h util.h
+nhwdbserver.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h linkedlist.h list.h logdefs.h mb.h mem.h nhwdbserver.c node.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tshtable.h tuple.h typetable.h util.h
+ni8_parser.o: i8_parser.h ni8_parser.c
+nindextable.o: automaton.h config.h dataStackEntry.h endpoint.h event.h filecrawler.h hashtable.h indextable.h linkedlist.h list.h logdefs.h map.h mem.h nindextable.c node.h nodecrawler.h ptable.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tuple.h typetable.h util.h
+ninthash.o: ninthash.c
+nkflowlogger.o: config.h endpoint.h kernel/debug.h kernel/khwdb.h nkflowlogger.c srpc.h timestamp.h
+nkflowmonitor.o: config.h endpoint.h flowrec.h kflowmonitor.h logdefs.h mem.h nkflowmonitor.c rtab.h srpc.h timestamp.h util.h
+nkflowpersist.o: config.h endpoint.h logdefs.h mem.h nkflowpersist.c rtab.h srpc.h timestamp.h util.h
+nkhttplogger.o: config.h endpoint.h kernel/debug.h kernel/khwdb.h mem.h nkhttplogger.c srpc.h timestamp.h
+nlink_accumulator.o: link_accumulator.h nlink_accumulator.c
+nlinkedlist.o: linkedlist.h mem.h nlinkedlist.c
+nlinklogger.o: config.h endpoint.h i8_parser.h link_accumulator.h nlinklogger.c rt_parser.h srpc.h
+nlinkmonitor.o: config.h endpoint.h i8_parser.h linkmonitor.h linkrec.h logdefs.h mem.h nlinkmonitor.c rtab.h srpc.h timestamp.h util.h
+nlist.o: config.h list.h logdefs.h mem.h nlist.c util.h
+nmap.o: config.h dir.h endpoint.h filecrawler.h hashtable.h list.h logdefs.h map.h mem.h nmap.c rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h
+nmb.o: config.h endpoint.h list.h mb.h mem.h nmb.c node.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tuple.h typetable.h
+nmem.o: mem.h nmem.c
+nnflow_accumulator.o: flow_accumulator.h nnflow_accumulator.c
+nnflowlogger.o: config.h endpoint.h flow_accumulator.h nnflowlogger.c srpc.h
+nnodecrawler.o: config.h endpoint.h list.h logdefs.h mb.h mem.h nnodecrawler.c node.h nodecrawler.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tuple.h typetable.h util.h y.tab.h
+nodecrawler.o: config.h endpoint.h list.h logdefs.h mb.h mem.h node.h nodecrawler.c nodecrawler.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tuple.h typetable.h util.h y.tab.h
+noldautomaton.o: a_globals.h automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h noldautomaton.c srpc.h stack.h timestamp.h topic.h tshtable.h
+nparser.o: config.h logdefs.h mem.h nparser.c parser.h sqlstmts.h timestamp.h typetable.h util.h y.tab.h
+npdb.o: config.h dir.h endpoint.h hashtable.h list.h logdefs.h map.h mem.h npdb.c parser.h pdb.h rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h y.tab.h
+npersist.o: config.h endpoint.h logdefs.h mem.h npersist.c rtab.h srpc.h timestamp.h util.h
+npersistevent.o: config.h endpoint.h logdefs.h mem.h npersistevent.c rtab.h srpc.h timestamp.h util.h
+npersistserver.o: config.h endpoint.h npersistserver.c pdb.h rtab.h srpc.h
+nportmap.o: nportmap.c portmap.h
+nprotomap.o: nprotomap.c protomap.h
+nptable.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h linkedlist.h list.h mem.h node.h nodecrawler.h nptable.c ptable.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tuple.h typetable.h
+npubsub.o: endpoint.h hashtable.h mem.h npubsub.c pubsub.h srpc.h
+nregistercallback.o: config.h endpoint.h logdefs.h mem.h nregistercallback.c rtab.h srpc.h util.h
+nreinstate.o: config.h endpoint.h logdefs.h mem.h nreinstate.c rtab.h srpc.h util.h
+nrpcserver.o: config.h endpoint.h nrpcserver.c srpc.h
+nrt_parser.o: nrt_parser.c rt_parser.h
+nrtab.o: config.h endpoint.h hashtable.h list.h logdefs.h mem.h nrtab.c rtab.h sqlstmts.h srpc.h typetable.h util.h
+nscan.o: mem.h nscan.l y.tab.h
+nsigterm.o: config.h endpoint.h logdefs.h mem.h nsigterm.c rtab.h srpc.h util.h
+nsinkclient.o: endpoint.h nsinkclient.c srpc.h
+nsinktest.o: endpoint.h nsinktest.c srpc.h
+nsqlstmts.o: config.h logdefs.h mem.h nsqlstmts.c sqlstmts.h timestamp.h typetable.h util.h y.tab.h
+nsrpc.o: crecord.h ctable.h endpoint.h logdefs.h mem.h nsrpc.c srpc.h srpcdefs.h stable.h tslist.h
+nstable.o: mem.h nstable.c stable.h tslist.h
+nstack.o: automaton.h code.h dataStackEntry.h endpoint.h event.h linkedlist.h machineContext.h mem.h nstack.c srpc.h stack.h tshtable.h
+nstdinserver.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h linkedlist.h list.h logdefs.h mb.h mem.h node.h nstdinserver.c pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h tshtable.h tuple.h typetable.h util.h
+nstripws.o: nstripws.c
+nsubscribecallback.o: config.h endpoint.h logdefs.h mem.h nsubscribecallback.c rtab.h srpc.h util.h
+nsysmonitor.o: config.h endpoint.h logdefs.h mem.h nsysmonitor.c rtab.h srpc.h timestamp.h util.h
+ntable.o: config.h endpoint.h list.h logdefs.h mem.h node.h ntable.c pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h typetable.h util.h
+ntee.o: ntee.c
+ntest_iface.o: ntest_iface.c
+ntestserver.o: config.h endpoint.h ntestserver.c pdb.h rtab.h srpc.h
+ntimestamp.o: mem.h ntimestamp.c timestamp.h
+ntopic.o: automaton.h dataStackEntry.h endpoint.h event.h linkedlist.h mem.h ntopic.c srpc.h topic.h tshtable.h
+ntshtable.o: mem.h ntshtable.c tshtable.h
+ntslist.o: mem.h ntslist.c tslist.h
+ntypetable.o: ntypetable.c typetable.h
+nuseindex.o: config.h endpoint.h nuseindex.c rtab.h srpc.h timestamp.h
+nusereventmonitor.o: config.h endpoint.h logdefs.h mem.h nusereventmonitor.c rtab.h srpc.h timestamp.h usereventmonitor.h usereventrec.h util.h
+oldautomaton.o: a_globals.h automaton.h code.h dataStackEntry.h dsemem.h endpoint.h event.h linkedlist.h machineContext.h mem.h oldautomaton.c srpc.h stack.h timestamp.h topic.h tshtable.h
+parser.o: config.h logdefs.h mem.h parser.c parser.h sqlstmts.h timestamp.h typetable.h util.h y.tab.h
+pdb.o: config.h dir.h endpoint.h hashtable.h list.h logdefs.h map.h mem.h parser.h pdb.c pdb.h rtab.h sqlstmts.h srpc.h timestamp.h typetable.h util.h y.tab.h
+persist.o: config.h endpoint.h logdefs.h mem.h persist.c rtab.h srpc.h timestamp.h util.h
+persistevent.o: config.h endpoint.h logdefs.h mem.h persistevent.c rtab.h srpc.h timestamp.h util.h
+persistserver.o: config.h endpoint.h pdb.h persistserver.c rtab.h srpc.h
+portmap.o: portmap.c portmap.h
+protomap.o: protomap.c protomap.h
+ptable.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h linkedlist.h list.h mem.h node.h nodecrawler.h ptable.c ptable.h pubsub.h rtab.h sqlstmts.h srpc.h table.h timestamp.h topic.h tshtable.h tuple.h typetable.h
+pubsub.o: endpoint.h hashtable.h mem.h pubsub.c pubsub.h srpc.h
+registercallback.o: config.h endpoint.h logdefs.h mem.h registercallback.c rtab.h srpc.h util.h
+reinstate.o: config.h endpoint.h logdefs.h mem.h reinstate.c rtab.h srpc.h util.h
+rpcserver.o: config.h endpoint.h rpcserver.c srpc.h
+rt_parser.o: rt_parser.c rt_parser.h
+rtab.o: config.h endpoint.h hashtable.h list.h logdefs.h mem.h rtab.c rtab.h sqlstmts.h srpc.h typetable.h util.h
+scan.o: mem.h scan.l y.tab.h
+sigterm.o: config.h endpoint.h logdefs.h mem.h rtab.h sigterm.c srpc.h util.h
+sinkclient.o: endpoint.h sinkclient.c srpc.h
+sinktest.o: endpoint.h sinktest.c srpc.h
+sqlstmts.o: config.h logdefs.h mem.h sqlstmts.c sqlstmts.h timestamp.h typetable.h util.h y.tab.h
+srpc.o: crecord.h ctable.h endpoint.h logdefs.h mem.h srpc.c srpc.h srpcdefs.h stable.h tslist.h
+stable.o: mem.h stable.c stable.h tslist.h
+stack.o: automaton.h code.h dataStackEntry.h endpoint.h event.h linkedlist.h machineContext.h mem.h srpc.h stack.c stack.h tshtable.h
+stdinserver.o: automaton.h config.h dataStackEntry.h endpoint.h event.h hwdb.h linkedlist.h list.h logdefs.h mb.h mem.h node.h pubsub.h rtab.h sqlstmts.h srpc.h stdinserver.c table.h timestamp.h tshtable.h tuple.h typetable.h util.h
+stripws.o: stripws.c
+subscribecallback.o: config.h endpoint.h logdefs.h mem.h rtab.h srpc.h subscribecallback.c util.h
+sysmonitor.o: config.h endpoint.h logdefs.h mem.h rtab.h srpc.h sysmonitor.c timestamp.h util.h
+table.o: config.h endpoint.h list.h logdefs.h mem.h node.h pubsub.h rtab.h sqlstmts.h srpc.h table.c table.h timestamp.h typetable.h util.h
+tee.o: tee.c
+test_iface.o: test_iface.c
+testserver.o: config.h endpoint.h pdb.h rtab.h srpc.h testserver.c
+timestamp.o: mem.h timestamp.c timestamp.h
+topic.o: automaton.h dataStackEntry.h endpoint.h event.h linkedlist.h mem.h srpc.h topic.c topic.h tshtable.h
+tshtable.o: mem.h tshtable.c tshtable.h
+tslist.o: mem.h tslist.c tslist.h
+typetable.o: typetable.c typetable.h
+useindex.o: config.h endpoint.h rtab.h srpc.h timestamp.h useindex.c
+usereventmonitor.o: config.h endpoint.h logdefs.h mem.h rtab.h srpc.h timestamp.h usereventmonitor.c usereventmonitor.h usereventrec.h util.h
